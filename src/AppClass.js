@@ -4,6 +4,7 @@ import BoxClass from "./components/BoxClass2.js"
 import Rock from "./images/rock.svg"
 import Scissors from "./images/scissors.svg"
 import Papers from "./images/papers.svg"
+import { FlagIcon } from "react-flag-kit";
 
 const choice = {
   rock: {
@@ -62,6 +63,7 @@ export default class AppClass extends Component {
   render(){
     return(
       <div className="wrap">
+        <FlagIcon code="AX" size={24} />;
         <h1>"가위바위보"</h1>
         <div className='test_box'>
           <span className='test_desc'>{this.count+1}</span>
